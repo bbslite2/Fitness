@@ -53,15 +53,17 @@
           <a href="#programs" class="btn btn-outline">查看課程方案</a>
         </div>
         <ul class="hero-stats">
-          <li><strong>500+</strong><span>學員完成訓練</span></li>
-          <li><strong>4.9 / 5</strong><span>學員滿意度</span></li>
-          <li><strong>10 年+</strong><span>教練實務經驗</span></li>
+          <li><strong class="counter" data-target="500" data-suffix="+">0</strong><span>學員完成訓練</span></li>
+          <li><strong class="counter" data-target="4.9" data-decimals="1" data-suffix=" / 5">0</strong><span>學員滿意度</span></li>
+          <li><strong class="counter" data-target="10" data-suffix=" 年+">0</strong><span>教練實務經驗</span></li>
         </ul>
       </div>
       <div class="hero-media" aria-hidden="true">
-        <div class="hero-card card-1">🏋️‍♀️ 漸進式阻力訓練</div>
-        <div class="hero-card card-2">🦴 強化骨密度</div>
-        <div class="hero-card card-3">⚖️ 改善平衡與防跌</div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="hero-card card-1 float-1">🏋️‍♀️ 漸進式阻力訓練</div>
+        <div class="hero-card card-2 float-2">🦴 強化骨密度</div>
+        <div class="hero-card card-3 float-3">⚖️ 改善平衡與防跌</div>
       </div>
     </div>
   </section>
@@ -329,6 +331,10 @@
   </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="回到頂部" title="回到頂部">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="supabase-config.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
